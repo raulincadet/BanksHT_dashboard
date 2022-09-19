@@ -7,7 +7,7 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ## About the dashboard
-To realize this dashboard, data provided on the website of the Haitian central bank (Banque de la République d'Haïti), have been used. The dashboard is not intended to be used as a tool for decision making, although the information extracted from raw financial data may relevent to understand some aspects of the Haitian banking sector. Any suggestion to improve the dashboard is welcomed. Do not hesitate to send me an email. 
+To realize this dashboard, data provided on the website of the Haitian central bank (Banque de la République d'Haïti), have been used. The dashboard is not intended to be used as a tool for decision making, although the information extracted from raw financial data may relevent to understand some aspects of the Haitian banking sector. Any suggestion to improve the dashboard is welcomed. Do not hesitate to send me an [email](mailto:raulin.cadet@uniq.edu.ht). Click [here](https://cours.shinyapps.io/BanksHT_dashboard/) to navigate through the dashboard
 
 ## Approach
 Financial data related to the banks, provided on the website of the central banks are not structured as time series data. I had to use R to download 97 files (format: Excel). Each excel file contains many sheets, with different kinds of financial data. My targets were the balance sheet and the income statement. I should have chronological data for each variable of the reports, to be able to plot their trends. In this regards, several Python functions have been written to import data from the excel files, cleaning and gathering them as panel data (by quarters and by banks).

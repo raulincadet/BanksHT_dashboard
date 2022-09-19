@@ -9,7 +9,9 @@ dashboard is not intended to be used as a tool for decision making,
 although the information extracted from raw financial data may relevent
 to understand some aspects of the Haitian banking sector. Any suggestion
 to improve the dashboard is welcomed. Do not hesitate to send me an
-email.
+[email](mailto:raulin.cadet@uniq.edu.ht). Click
+[here](https://cours.shinyapps.io/BanksHT_dashboard/) to navigate
+through the dashboard
 
 ## Approach
 
