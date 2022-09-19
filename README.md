@@ -23,7 +23,8 @@ sheet and the income statement. I should have chronological data for
 each variable of the reports, to be able to plot their trends. In this
 regards, several Python functions have been written to import data from
 the excel files, cleaning and gathering them as panel data (by quarters
-and by banks).
+and by banks). These data manipulation are available in another [GitHub
+project](https://github.com/raulincadet/BanksHT/).
 
 The dashboard has been realized, using the packages Shiny and
 Shinydashboard of R programming language. The page Raw indicators of the
