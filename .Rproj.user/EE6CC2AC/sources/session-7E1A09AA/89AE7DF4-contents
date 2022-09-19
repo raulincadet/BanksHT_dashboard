@@ -367,7 +367,7 @@ ui <- dashboardPage(
   
   dashboardHeader(title = "Haitian Banking Trend and Performance",
                   
-                  titleWidth = 400, uiOutput("git")
+                  titleWidth = 400
                 #(tags$li(class="dropdown",href=tags$a("https://twitter.com/","Twitter",icon=icon("twitter"),target="_blank")))
                 
                  ), # end of dashboardHeader
@@ -775,12 +775,7 @@ server <- function(input, output) {
          ) # end of renderImage
     
      })
-  output$git=renderUI(
-    shinydashboardPlus::socialButton(
-      url = "https://github.com",
-      type = "github"
-    )
-  )
+  
   ####3
 } # end of server
 
