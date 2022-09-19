@@ -1,0 +1,19 @@
+---
+title: "Untitled"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## About the dashboard
+To realize this dashboard, data provided on the website of the Haitian central bank (Banque de la République d'Haïti), have been used. The dashboard is not intended to be used as a tool for decision making, although the information extracted from raw financial data may relevent to understand some aspects of the Haitian banking sector. Any suggestion to improve the dashboard is welcomed. Do not hesitate to send me an email . 
+
+## Approach
+Financial data related to the banks, provided on the website of the central banks are not structured as time series data. I had to use R to download 97 files (format: Excel). Each excel file contains many sheets, with different kinds of financial data. My targets were the balance sheet and the income statement. I should have chronological data for each variable of the reports, to be able to plot their trends. In this regards, several Python functions have been written to import data from the excel files, cleaning and gathering them as panel data (by quarters and by banks).
+
+The dashboard has been realized, using the packages Shiny and Shinydashboard of R programming language. The page Raw indicators of the dashboard can be used to observe changes in financial variables such as total assets, net banking income etc. This page presents also a graph of network similarity between the banks (including the banking system), for each variable selected by the user. The network is builded considering the significant Pearson correlation between each pair of banks (including the banking system). The threshold of 5% is used for the test of correlation. The user can select the banks he wants to consider. Data related to the whole banking system is considered, allowing to compare its behavior with the one of any bank.
+
+The page Financial ratios presents some gauges related to some key financial ratios, by bank and by quarter. A user of the dashboard can choose the quarter and the bank he wants to consider. In addition, this page allowd the user to choose a financial ratio and one or several banks, to observe the trend of the selected indicator and its network of similarity.
+
+To define the intervals of the gauges, the percentile approach is used. Since, three intervals should be defined, the following probabilities are considered, to calculate the percentile: 0, 0.33, 0.67, 1. The outliers are removed before calculating the bounds of a gauge. To ensure that each gauge accounts for the context of the Haitian banking sector, ratios related to agregate data of the banking system are used to define their bounds. Ratios related to a bank are indicated in the gauges, whithout remove any outliers. Thus, the user of the dashboard can observe when an entity outperforms or underperforms the banking industry.
