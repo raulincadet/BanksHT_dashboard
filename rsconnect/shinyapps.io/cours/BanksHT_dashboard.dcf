@@ -1,0 +1,14 @@
+name: BanksHT_dashboard
+title: BanksHT_dashboard
+username:
+account: cours
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7046076
+bundleId: 6314749
+url: https://cours.shinyapps.io/BanksHT_dashboard/
+when: 1663547599.51164
+lastSyncTime: 1663547599.51164
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: untit.R
