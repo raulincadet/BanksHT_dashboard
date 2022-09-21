@@ -4,6 +4,7 @@ Haitian Banking Trend and Performance
 ![GitHub repo size](https://img.shields.io/github/repo-size/raulincadet/BanksHT_dashboard?color=green)
 ![GitHub language count](https://img.shields.io/github/languages/count/raulincadet/BanksHT_dashboard?style=flat-square)
 ![Lines of code](https://img.shields.io/tokei/lines/github/raulincadet/BanksHT_dashboard?color=orange&style=plastic)
+![dashboard_BKHT3](https://user-images.githubusercontent.com/11329136/191504232-5ae90511-3d48-4875-a1ba-60f1086ef1c6.png)
 
 ## About the dashboard
 
